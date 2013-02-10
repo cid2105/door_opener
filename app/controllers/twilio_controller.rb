@@ -13,7 +13,7 @@ class TwilioController < ApplicationController
   		Door.first.update_attribute("open", false)
   		render :text => 'success'
   	else
-  		render :tesxt => 'failure'
+  		render :text => 'failure'
   	end
   end
 
