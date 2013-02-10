@@ -8,6 +8,7 @@ CarterRails::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   match 'twilio/process_sms' => 'twilio#process_sms'
+  match 'check_door_status' => "twilio#check_door_status"
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
