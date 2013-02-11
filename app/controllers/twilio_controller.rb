@@ -11,7 +11,7 @@ class TwilioController < ApplicationController
   def check_door_status
   	if Door.first.open
   		Door.first.update_attribute("open", false)
-  		@response = "success"
+  		@response = "¶"
   	else
   		@response = "failure"
   	end
