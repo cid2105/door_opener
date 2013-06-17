@@ -7,7 +7,7 @@ class AlarmsController < ApplicationController
   def set
   	if Alarm.exists?(key: params["key"])
       @alarm = Alarm.find_by_key(params["key"])
-      if @set and params.has_key?("hour") && params.has_key?["minute"]) 
+      if @set and params.has_key?("hour") && params.has_key?("minute") 
         @hour, @minute = params["hour"], params["minute"]
         @alarm.update_attributes(:active => @set, :hour => @hour, :minute => @minute)
       else
