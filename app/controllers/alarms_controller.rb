@@ -18,7 +18,7 @@ class AlarmsController < ApplicationController
 
   def status
   	if Alarm.exists?(key: params["key"])
-  		@alarm = Alarm.find(params["key"])  		
+  		@alarm = Alarm.find_by_key(params["key"])  		
       @response = (@alarm.beep)? "beep" : "don't beep"
   	else
   		@response = "Invalid alarm token"
