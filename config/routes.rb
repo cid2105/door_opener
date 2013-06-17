@@ -12,6 +12,7 @@ CarterRails::Application.routes.draw do
 
   match 'alarms/:key/set' => 'alarms#set'
   match 'alarms/:key/validate' => 'alarms#validate'
+  match 'alarms/:key/status' => 'alarms#status'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
