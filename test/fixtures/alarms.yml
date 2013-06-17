@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  active: 
+  minute: 1
+  hour: 1
+  key: MyString
+
+two:
+  active: 
+  minute: 1
+  hour: 1
+  key: MyString

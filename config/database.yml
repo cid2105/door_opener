@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   database: carter-rails
-  username: crabasa
+  username: colediamond
   password:
   host: localhost
 

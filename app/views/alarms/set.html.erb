@@ -1,0 +1,7 @@
+<% if defined? @set %>
+	The alarm is now 
+	<% if @set %>set for <%= @alarm %>
+	<% else %> off <% end %>
+<% else %>
+	Sorry, but you have entered an invalid code
+<% end %>

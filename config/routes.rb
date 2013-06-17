@@ -10,6 +10,9 @@ CarterRails::Application.routes.draw do
   match 'twilio/process_sms' => 'twilio#process_sms'
   match 'check_door_status' => "twilio#check_door_status"
 
+  match 'alarms/:key/set' => 'alarms#set'
+  match 'alarms/:key/validate' => 'alarms#validate'
+
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
